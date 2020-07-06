@@ -16,6 +16,14 @@ def clear():
 	operator = ''
 	tvar.set(operator)
 
+#function to find result of query
+def equalsTo():
+	global operator
+	answer = eval(operator)
+	operator = str(answer)
+	tvar.set(answer)
+
+
 
 #adding the value screen 
 
@@ -66,7 +74,7 @@ k2.grid(row = 3,column = 1)
 k3 = Button(screen,text = '3', font=('arial',15,'bold'), bd = 5,padx=12,pady=7,command = lambda:click(3))
 k3.grid(row = 3,column = 2)
 
-kmul = Button(screen,text = 'x', font=('arial',15,'bold'), bd = 5,padx=12,pady=7,command = lambda:click('x'))
+kmul = Button(screen,text = 'x', font=('arial',15,'bold'), bd = 5,padx=12,pady=7,command = lambda:click('*'))
 kmul.grid(row = 3,column = 3)
 
 #--------4th row-----------
@@ -77,10 +85,10 @@ kclear.grid(row = 4,column = 0)
 k0 = Button(screen,text = '0', font=('arial',15,'bold'), bd = 5,padx=12,pady=7,command = lambda:click(0))
 k0.grid(row = 4,column = 1)
 
-keq = Button(screen,text = '=', font=('arial',15,'bold'), bd = 5,padx=12,pady=7)
+keq = Button(screen,text = '=', font=('arial',15,'bold'), bd = 5,padx=12,pady=7,command = equalsTo)
 keq.grid(row = 4,column = 2)
 
-kdiv = Button(screen,text = '÷', font=('arial',15,'bold'), bd = 5,padx=12,pady=7,command = lambda:click('÷'))
+kdiv = Button(screen,text = '÷', font=('arial',15,'bold'), bd = 5,padx=12,pady=7,command = lambda:click('/'))
 kdiv.grid(row = 4,column = 3)
 
 
