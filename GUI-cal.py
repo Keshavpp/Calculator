@@ -1,9 +1,13 @@
 from tkinter import *
 
 screen = Tk()
-screen.title('Yantra')
-screen.geometry('280x295')
-screen.configure(bg = 'gray')
+screen.title('Yantra') #name of calculator
+screen.configure(bg = 'gray') #backgroud colour of calc
+
+#max & min size of the calc tab
+screen.maxsize(width =280 , height =295 ) 
+screen.minsize(width =280, height = 295)
+
 #function to enter values using buttons 
 def click(number):
 	global operator
