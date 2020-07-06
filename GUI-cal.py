@@ -1,12 +1,15 @@
 from tkinter import *
 
 screen = Tk()
-screen.title('Yantra') #name of calculator
+screen.title('YANTRA') #name of calculator
 screen.configure(bg = 'gray') #backgroud colour of calc
 
 #max & min size of the calc tab
 screen.maxsize(width =280 , height =295 ) 
 screen.minsize(width =280, height = 295)
+
+#setting icon for appl
+screen.iconbitmap('calc.ico')
 
 #function to enter values using buttons 
 def click(number):
