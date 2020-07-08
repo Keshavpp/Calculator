@@ -1,12 +1,12 @@
 from tkinter import *
 
 screen = Tk()
-screen.title('YANTRA') #name of calculator
+screen.title('"YANTRA"') #name of calculator
 screen.configure(bg = 'gray') #backgroud colour of calc
 
 #max & min size of the calc tab
-screen.maxsize(width =280 , height =292 ) 
-screen.minsize(width =280, height = 292)
+screen.maxsize(width =280 , height =290 ) 
+screen.minsize(width =280, height = 290)
 
 #setting icon for appl
 screen.iconbitmap('calc.ico')
